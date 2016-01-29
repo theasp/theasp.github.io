@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <!-- Google Analytics -->
+    <script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-73091410-1', 'auto');
+ga('send', 'pageview');
+    </script>
+    <script async src='//www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+                mdl-layout--fixed-header">
+      {% include header.html %}
+      <main class="mdl-layout__content">
+        <div class="mdl-gird">
+          <div class="mdl-cell mdl-cell--12-col">
+            {{ content }}
+          </div>
+        </div>
+        {% include footer.html %}
+      </main>
+    </div>
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<header class="mdl-layout__header">
+  <div class="mdl-layout__header-row">    
+    <span class="mdl-layout-title">{{ page.title }}</span>
+    <div class="mdl-layout-spacer"></div>
+  </div>
+</header>
+<div class="mdl-layout__drawer">
+  <span class="mdl-layout-title"><img height="24px" src="{{ site.logo | prepend: site.baseurl }}"> {{ site.title }}</span>
+  <nav class="mdl-navigation">
+    {% for my_page in site.pages %}
+    {% if my_page.title %}
+    <a class="mdl-navigation__link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+    {% endif %}
+    {% endfor %}
+    <a class="mdl-navigation__link" href="https://github.com/theasp">GitHub</a>
+    <a class="mdl-navigation__link" href="{{ site.baseurl }}/resume.pdf">Resume</a>
+  </nav>
+</div>
