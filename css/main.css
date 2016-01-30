@@ -24,6 +24,7 @@
 
 .center {
   text-align: center;
+  vertical-align: center;
 }
 
 .mdl-card {
@@ -32,4 +33,9 @@
 
 .mdl-card__supporting-text {
   color: #000000 !important;
+}
+
+.svg-size {
+  height: 0.77em;
+  padding-bottom: 0.23em;
 }
