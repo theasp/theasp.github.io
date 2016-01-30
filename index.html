@@ -3,16 +3,84 @@ layout: default
 title: Andrew Phillips
 ---
 
-<div class="mdl-cell mdl-cell--12-col">
-  {% if site.posts %}
-  <h3>Posts</h3>
-  <table class="mdl-data-table mdl-js-data-table posts-table">
-    {% for post in site.posts %}
-    <tr href="{{ post.url | prepend: site.baseurl }}" onclick="window.location.href=this.getAttribute('href')">
-      <td class="mdl-data-table__cell--non-numeric">{{ post.date | date: "%b %-d, %Y" }}</td>
-      <td class="mdl-data-table__cell--non-numeric">{{ post.title }}<td>
-    </tr>
-    {% endfor %}
-  </table>
-  {% endif %}
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col">
+    <div class="mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__supporting-text">
+        <h3>Aphex</h3>
+        <p>Language: Perl</p>
+        <p>MP3 album tag and filename fixer</p>
+      </div>
+      <div class="mdl-card__actions mdl-card--border right">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="https://github.com/theasp/aphex"><img src="/images/GitHub-Mark-24px.png"></img> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mdl-cell mdl-cell--4-col">
+    <div class="mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__supporting-text">
+        <h3>bash-fancy-ps1</h3>
+        <p>Language: Bash</p>
+        <p>Make long paths in your bash prompt shorter by stripping out middle directories</p>
+      </div>
+      <div class="mdl-card__actions mdl-card--border right">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="https://github.com/theasp/bash-fancy-ps1"><img src="/images/GitHub-Mark-24px.png"></img> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mdl-cell mdl-cell--4-col">
+    <div class="mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__supporting-text">
+        <h3>awesome-config</h3>
+        <p>Language: Lua</p>
+        <p>Configuration GUI and plugin API for the Awesome window manager</p>
+      </div>
+      <div class="mdl-card__actions mdl-card--border right">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="https://launchpad.net/~theasp/+archive/ubuntu/awesome-config">PPA</a>
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="https://github.com/theasp/awesome-config"><img src="/images/GitHub-Mark-24px.png"></img> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mdl-cell mdl-cell--4-col">
+    <div class="mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__supporting-text">
+        <h3>mini-ci</h3>
+        <p>Language: Bash</p>
+        <p>A lightweight continuous integration daemon</p>
+      </div>
+      <div class="mdl-card__actions mdl-card--border right">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="https://launchpad.net/~theasp/+archive/ubuntu/mini-ci">PPA</a>
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="https://github.com/theasp/mini-ci"><img src="/images/GitHub-Mark-24px.png"></img> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mdl-cell mdl-cell--4-col">
+    <div class="mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__supporting-text">
+        <h3>org-publish-script</h3>
+        <p>Language: EmacsLisp</p>
+        <p>Publish org-mode projects outside of emacs</p>
+      </div>
+      <div class="mdl-card__actions mdl-card--border right">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="https://github.com/theasp/org-publish-script"><img src="/images/GitHub-Mark-24px.png"></img> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- {% if site.posts %} -->
+  <!-- <h3>Posts</h3> -->
+  <!-- <table class="mdl-data-table mdl-js-data-table posts-table"> -->
+  <!--   {% for post in site.posts %} -->
+  <!--   <tr href="{{ post.url | prepend: site.baseurl }}" onclick="window.location.href=this.getAttribute('href')"> -->
+  <!--     <td class="post-table-date-cell">{{ post.date | date: "%F %T" }}</td> -->
+  <!--     <td class="mdl-data-table__cell--non-numeric post-table-title-cell">{{ post.title }}<td> -->
+  <!--   </tr> -->
+  <!--   {% endfor %} -->
+  <!-- </table> -->
+  <!-- {% endif %} -->
+
 </div>

@@ -2,6 +2,11 @@
   <div class="mdl-layout__header-row">    
     <span class="mdl-layout-title">{{ page.title }}</span>
     <div class="mdl-layout-spacer"></div>
+    <nav class="mdl-navigation">
+      <a class="mdl-button mdl-button-js mdl-layout--large-screen-only" href="mailto:{{ site.email }}" style="color: #ffffff;"><i class="material-icons">contact_mail</i> {{ site.email }}</a>
+      <a class="mdl-button mdl-button-js mdl-layout--small-screen-only mdl-button--icon" href="mailto:{{ site.email }}" style="color: #ffffff;"><i class="material-icons">contact_mail</i></a>
+      <a class="mdl-button mdl-button-js mdl-layout--large-screen-only" href="https://keybase.io/theasp"><i class="material-icons">link</i> Keybase</a>
+    </nav>
   </div>
 </header>
 <div class="mdl-layout__drawer">
@@ -13,6 +18,5 @@
     {% endif %}
     {% endfor %}
     <a class="mdl-navigation__link" href="https://github.com/theasp">GitHub</a>
-    <a class="mdl-navigation__link" href="{{ site.baseurl }}/resume.pdf">Resume</a>
   </nav>
 </div>

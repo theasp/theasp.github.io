@@ -1,0 +1,35 @@
+.posts-table {
+   width: 100%;
+}
+
+.posts-table-date-cell {
+   width: 20em;
+}
+
+.posts-table-title-cell {
+   width: calc(100% - 20em);
+}
+
+.mdl-layout__header .mdl-button {
+  color: #ffffff;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.mdl-card {
+  width: 100% !important;
+}
+
+.mdl-card__supporting-text {
+  color: #000000 !important;
+}
