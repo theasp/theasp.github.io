@@ -3,20 +3,19 @@
     <span class="mdl-layout-title">{{ page.title }}</span>
     <div class="mdl-layout-spacer"></div>
     <nav class="mdl-navigation">
-      <a class="mdl-button mdl-button-js mdl-layout--large-screen-only" href="mailto:{{ site.email }}" style="color: #ffffff;"><i class="material-icons">contact_mail</i> {{ site.email }}</a>
+      <a class="mdl-button mdl-button-js mdl-layout--large-screen-only" href="mailto:{{ site.email }}" style="color: #ffffff;">{{ site.email }}</a>
       <a class="mdl-button mdl-button-js mdl-layout--small-screen-only mdl-button--icon" href="mailto:{{ site.email }}" style="color: #ffffff;"><i class="material-icons">contact_mail</i></a>
-      <a class="mdl-button mdl-button-js mdl-layout--large-screen-only" href="https://keybase.io/theasp"><i class="material-icons">link</i> Keybase</a>
     </nav>
   </div>
 </header>
 <div class="mdl-layout__drawer">
   <span class="mdl-layout-title"><img class="svg-size" src="{{ site.logo | prepend: site.baseurl }}"> {{ site.title }}</span>
   <nav class="mdl-navigation">
-    {% for my_page in site.pages %}
-    {% if my_page.title %}
+    {% for my_page in site.pages %}{% if my_page.title %}
     <a class="mdl-navigation__link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-    {% endif %}
-    {% endfor %}
+    {% endif %}{% endfor %}
+    <hr>
     <a class="mdl-navigation__link" href="https://github.com/theasp">GitHub</a>
+    <a class="mdl-navigation__link" href="https://keybase.io/theasp">Keybase</a>
   </nav>
 </div>
