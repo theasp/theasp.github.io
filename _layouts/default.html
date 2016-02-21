@@ -2,14 +2,7 @@
 <html>
   {% include head.html %}
   <body>
-    <!-- Google Analytics -->
-    <script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-73091410-1', 'auto');
-ga('send', 'pageview');
-    </script>
-    <script async src='//www.google-analytics.com/analytics.js'></script>
-    <!-- End Google Analytics -->
+    {% include google-tag.html %}
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
                 mdl-layout--fixed-header">
       {% include header.html %}
