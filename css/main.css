@@ -1,18 +1,6 @@
-.body {
+body {
    font-family: Roboto, Helvetica, Arial, sans-serif;
    background-color: #FAFAFA;
-}
-
-.posts-table {
-   width: 100%;
-}
-
-.posts-table-date-cell {
-   width: 20em;
-}
-
-.posts-table-title-cell {
-   width: calc(100% - 20em);
 }
 
 .mdl-layout__header .mdl-button {
