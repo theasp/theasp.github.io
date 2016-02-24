@@ -6,8 +6,14 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
                 mdl-layout--fixed-header">
       {% include header.html %}
-      {{ content }}
-      {% include footer.html %}
+      <main class="mdl-layout__content">
+        <div class="mdl-gird">
+          <div class="mdl-cell mdl-cell--12-col">
+            {{ content }}
+          </div>
+        </div>
+        {% include footer.html %}
+      </main>
     </div>
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
   </body>
