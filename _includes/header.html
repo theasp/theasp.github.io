@@ -14,6 +14,7 @@
     {% for my_page in site.pages %}{% if my_page.title %}
     <a class="mdl-navigation__link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
     {% endif %}{% endfor %}
+    <a class="mdl-navigation__link" href="/cljs-webrepl/">CLJS-WebREPL</a>
     <hr>
     <a class="mdl-navigation__link" href="mailto:theasp@gmail.com">Email</a>
     <a class="mdl-navigation__link" href="https://github.com/theasp">GitHub</a>
